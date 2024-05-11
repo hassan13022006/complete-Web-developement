@@ -1,12 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=a, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <a href="https://google.com"></a>
-    <a href="https://www.wikipedia.org/"></a>
+    <a href="https://google.com" target="_blank">go to google</a><br>
+    <a href="https://www.wikipedia.org/" target="_blank">go to wikipedia</a><br>
+
+    <a href="/tut.html" target="_blank">Tut</a>
+
+
+    <!--List-->
+    <ul type="disc">
+        <li>this is my first unordered list</li>
+        <li>this is my second unordered list</li>
+            <ul>
+                <li>another one</li>
+                <li>another two</li>
+                <li>another three</li>
+            </ul>
+        <li>this is my third unordered list</li>
+    </ul>
+
+    <ol type="I">
+        <li>this is my first unordered list</li>
+        <li>this is my second unordered list</li>
+        <li>this is my third unordered list</li>
+    </ol>
+
+    <!--tables-->
+    <h3>HTML Tables</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Employee Role</th>
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Hassan</td>
+                <td>5762</td>
+                <td>python developer</td>
+            </tr>
+
+            <tr>
+                <td>Husain</td>
+                <td>5761</td>
+                <td>javascript</td>
+            </tr>
+
+            <tr>
+                <td>Random Bozo</td>
+                <td>5760</td>
+                <td>HTML expert</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Forms-->
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+
+        <div>
+            Role: <input type="text" role="myRole">
+        </div>
+        <br>
+
+        <div>
+            Email: <input type="text" email="myEmail">
+        </div>
+        <br>
+
+        <div>
+            Date: <input type="date" value="myDate">
+        </div>
+        <br>
+
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+
+        <label for="eligible">are you eligible?:</label>
+        <div>
+             <input type="checkbox" name="myEligibility" id="eligible">
+        </div>
+        <br>
+
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> 
+        </div>
+        <br>
+
+        <div>
+            Write about yourself: <br> <textarea name="myText" id="" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Car:</label>
+            <select name="myCar" id="car">
+                <option value="Bugati">Bugati</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Pagani">Pagani</option>
+                <option value="mr bean">mr bean</option>
+                <option value="Nano">Nano</option>
+                <option value="None" selected>None</option>
+                
+                </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset now">
+        </div>
+    
+    </form>
+
+<!--inline and block elements-->
+    <strong>this is a paragraph</strong> <a>this is also a paragraph</a>
+
+    <span>this is span</span> <span>this is also span</span>
+
+<!-- Ids and classes -->
+    <h3>Ids and classes tutorial</h3>
+    <div id="mainbox" class="redBG blackBorder">
+        this is mainbox 
+    </div>
+    <span class="redBG"></span>
+    <!-- emmet -->
+    <!-- . is for class # is for id -->
+    <span class="redBG"></span>
+    <span id="mainbox"></span>
+    <div class="redBG blackBorder anotherClass"></div>
+
+    <!-- Emmet takes div tag as default -->
+    <div class="blackBackground"></div>
+
+    <!-- creating multiple element using Emmet -->
+    <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar elemnts using Emmet -->
+    <span class="myclass myclass2 myclass3">First</span>
+    <span class="myclass myclass2 myclass3">Second</span>
+    <span class="myclass myclass2 myclass3">Third</span>
+    <span class="myclass myclass2 myclass3">Fourth</span>         
+
+<!-- HTML Entities -->
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+        <p>This is another &nbsp; &nbsp; paragraph with two spaces</p>
+        <p>Paragraph is written like this &lt;p&gt;</p>
+        <p>Pound is written like this &pound;</p>
+        <p>copyright is written like this &copy;</p>
+        <p>Another character is &rAarr;</p>
+        <p>Another charactwer is &frac14;</p>
+        <p>Empty chracter is written like this &#8203;</p>
+
+<!-- Semantic Tags -->
+    <h3>Semantic Tags</h3>
+    <details>
+        <summary>
+            The text below might not be useful so i dont care if u check it or not, but any ways :D
+        </summary>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex cupiditate quia id aliquid, beatae suscipit accusantium tempore itaque obcaecati debitis sint quod unde libero magnam fugiat! Inventore aliquam, repellat distinctio laudantium facere perferendis quod incidunt soluta, necessitatibus ut, temporibus hic reprehenderit error beatae accusamus quia in mollitia pariatur? Asperiores, possimus?
+    </details>
+
+
+
+
+
+
 </body>
+
 </html>
